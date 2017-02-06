@@ -139,7 +139,7 @@ object ScalaBasics {
    * @param s the string to split
    * @return the split string as a tuple
    */
-  def splitInHalf(s: String): (String, String) = (s.substring(0,(s.length()/2)), (s.substring(s.length/2)))
+  def splitInHalf(s: String): (String, String) = (s.substring(0,s.length/2), s.substring(s.length/2))
 
   /**
    * Determines if the given string s is a palindrome.
@@ -163,6 +163,8 @@ object ScalaBasics {
    * @return true if s is a palindrome; false otherwise
    */
   def isPalindrome(s: String): Boolean = ???
+  
+
 
   /**
    * You don't have to complete this one as we've removed it from the list

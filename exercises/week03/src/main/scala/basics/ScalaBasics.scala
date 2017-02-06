@@ -53,7 +53,7 @@ object ScalaBasics {
   def minWhile(r: Array[Int]): Int = {
     var i = 1
     var minInt = r(0)
-    while (i<r.length){
+    while (i < r.length){
       if (r(i) < minInt){
         minInt = r(i)
       }
@@ -96,17 +96,27 @@ object ScalaBasics {
    * @param r the array of integers
    * @return the minimum integer in the array
    */
-  def minRecursive(r: Array[Int]): Int = ???
+  def minRecursive(r: Array[Int]): Int = {
+    if (r.length == 1){
+       r(0)
+    }else {
+      if (r(0) < r(1)) {
+         minRecursive(r(0) +: r.drop(2))
+      } else {
+         minRecursive(r.drop(1))
+      }
+    }
+  }
 
   /**
-   * Return the base 36 equivalent of the BitInt b.
+   * Return the base 36 equivalent of the BigInt b.
    *
    * HINT: Poke around Scaladoc to find a way of doing this in Scala.
    *
    * @param b a big integer
    * @return the base 36 equivalent
    */
-  def base36(b: BigInt): String = ???
+  def base36(b: BigInt): String = b.toString(36)
 
   /**
    * Splits the String s in half.
@@ -129,7 +139,7 @@ object ScalaBasics {
    * @param s the string to split
    * @return the split string as a tuple
    */
-  def splitInHalf(s: String): (String, String) = ???
+  def splitInHalf(s: String): (String, String) = (s.substring(0,(s.length()/2)), (s.substring(s.length/2)))
 
   /**
    * Determines if the given string s is a palindrome.

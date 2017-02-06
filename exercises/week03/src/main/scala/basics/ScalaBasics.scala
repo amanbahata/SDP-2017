@@ -50,7 +50,17 @@ object ScalaBasics {
    * @param r the array of integers
    * @return the minimum integer in the array
    */
-  def minWhile(r: Array[Int]): Int = ???
+  def minWhile(r: Array[Int]): Int = {
+    var i = 1
+    var minInt = r(0)
+    while (i<r.length){
+      if (r(i) < minInt){
+        minInt = r(i)
+      }
+      i += 1
+    }
+    minInt
+  }
 
   /**
    * Write a function that returns the minimum integer in the Array r.

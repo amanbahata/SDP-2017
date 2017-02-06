@@ -74,7 +74,13 @@ object ScalaBasics {
    * @param r the array of integers
    * @return the minimum integer in the array
    */
-  def minFor(r: Array[Int]): Int = ???
+  def minFor(r: Array[Int]): Int = {
+    var minInt = r(0)
+    for (i <- 1 until r.length if r(i) < minInt){
+      minInt = r(i)
+    }
+    minInt
+  }
 
   /**
    * Write a function called minRecursive that returns the minimum integer in the Array r.

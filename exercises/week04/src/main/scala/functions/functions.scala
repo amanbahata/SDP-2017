@@ -12,7 +12,10 @@ object Funcs {
     * @param ls : List[A] the list to process
     * @return A list containing all but the first element of ls
     */
-  def tail[A](ls: List[A]): List[A] = ???
+  def tail[A](ls: List[A]): List[A] = ls match {
+    case Nil => throw new IllegalArgumentException
+    case _ => ls.tail
+  }
 
   /**
     * setHead replaces the first value in a list with a given value. If the
@@ -23,7 +26,10 @@ object Funcs {
     * @return a list whose head is `a' and whose tail is all but the first
     *         element of ls.
     **/
-  def setHead[A](ls: List[A], a: A): List[A] = ???
+  def setHead[A](ls: List[A], a: A): List[A] = ls match {
+    case Nil => a :: ls
+    case _ => a :: ls.tail
+  }
 
   /**
     * drop removes n elements from the given list. If n is greater than the

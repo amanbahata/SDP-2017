@@ -98,12 +98,13 @@ object ScalaBasics {
    */
   def minRecursive(r: Array[Int]): Int = {
     if (r.length == 1){
-       r(0)
-    }else {
-      if (r(0) < r(1)) {
-         minRecursive(r(0) +: r.drop(2))
-      } else {
-         minRecursive(r.drop(1))
+      return r(0)
+    }else{
+      if (r(0) < r(1)){
+        return minRecursive(r(0) +: r.drop(2))
+      }
+      else{
+        return minRecursive(r.drop(1))
       }
     }
   }
@@ -163,7 +164,7 @@ object ScalaBasics {
    * @return true if s is a palindrome; false otherwise
    */
   def isPalindrome(s: String): Boolean = ???
-  
+
 
 
   /**

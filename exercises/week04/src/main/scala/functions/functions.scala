@@ -23,7 +23,7 @@ object Funcs {
     *
     * @param ls : List[A] the list to be changed
     * @param a  : A the value that will replace the head of ls
-    * @return a list whose head is `a' and whose tail is all but the first
+    * @return a list whose head is 'a' and whose tail is all but the first
     *         element of ls.
     **/
   def setHead[A](ls: List[A], a: A): List[A] = ls match {
@@ -39,7 +39,9 @@ object Funcs {
     * @param n  : Int the number of elements to drop.
     * @return a list with the first n elements of ls removed, or an empty list.
     */
-  def drop[A](ls: List[A], n: Int): List[A] = ???
+  def drop[A](ls: List[A], n: Int): List[A] = ls match {
+    case _ => ls.drop(n)
+  }
 
   /**
     * init takes a list and removes the last element.

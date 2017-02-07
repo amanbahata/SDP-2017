@@ -100,7 +100,7 @@ object ScalaBasics {
     if (r.length == 1){
       r(0)
     }else{
-      if (r(0) < r(1)){
+      if (r(0) <= r(1)){
         minRecursive(r(0) +: r.drop(2))
       }
       else{
@@ -209,5 +209,3 @@ object ScalaBasics {
    * @return a map from words to the number of times that word was seen
    */
   def wordCounter(lines: Array[String]): Map[String, Int] = ???
-
-}

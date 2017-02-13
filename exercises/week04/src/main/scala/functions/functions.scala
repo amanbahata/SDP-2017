@@ -98,7 +98,7 @@ object Funcs {
 
   def length[A](ls: List[A]): Int = ls.length
 
-  def reverse[A](ls: List[A]): List[A] = ???
+  def reverse[A](ls: List[A]): List[A] =  ls.reverse
 
   def flatten[A](ls: List[List[A]]): List[A] = ???
 

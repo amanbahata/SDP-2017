@@ -51,7 +51,11 @@ object Funcs {
     * @param ls : List[A] the list to be changed.
     * @return a list with the last element of ls removed.
     */
-  def init[A](ls: List[A]): List[A] = ???
+  def init[A](ls: List[A]): List[A] = ls match {
+    case Nil => throw new IllegalArgumentException
+    case head :: List()  => List()
+    case  head :: tail => head :: init(tail)
+  }
 
   // LIST FOLDING
 

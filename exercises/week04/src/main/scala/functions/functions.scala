@@ -70,7 +70,15 @@ object Funcs {
    * list and the cumulative value.
    * @return the final valued.
    */
-  def foldLeft[A, B](ls: List[A], z: B)(f: (B, A) => B): B = ???
+  def foldLeft[A, B](ls: List[A], z: B)(f: (B, A) => B): B = {
+    var accumulator = z
+    var list = ls
+    while (list.nonEmpty){
+      accumulator = f( accumulator,list.head)
+      list = list.tail
+    }
+    accumulator
+  }
 
   /**
     * Use your implementation of foldLeft to implement these functions:

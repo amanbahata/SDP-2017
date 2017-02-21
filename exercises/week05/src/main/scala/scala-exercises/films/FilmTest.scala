@@ -1,19 +1,22 @@
 package films
 
-case class Director(firstName: String, lastName: String, yearOfBirth: Int){
+class Director(val firstName: String, val lastName: String, val yearOfBirth: Int){
 
   def name = s"$firstName $lastName"
 }
 
-case class Film(name: String, yearOfRelease: Int, imbdRating: Double, director: Director){
+class Film(val name: String, val yearOfRelease: Int, val imbdRating: Double, val director: Director){
 
-  def directorsAge = yearOfRelease - director.yearOfBirth
-  def idDirectedBy(director: Director) : Boolean
-  def copy(name: String): Film = Film(name, this.yearOfRelease, this.imbdRating, this.director)
+  def directorsAge : Int = yearOfRelease - director.yearOfBirth
+
+  def isDirectedBy(director: Director) : Boolean = { false }
+
+  def copy(name: String): Film = Film(name, yearOfRelease, imbdRating, director)
 }
 
 object Director {
   def apply(firstName: String, lastName: String, yearOfBirth: Int): Director = new Director(firstName, lastName, yearOfBirth)
+
   def older(director1: Director, director2: Director): Director = {
     if (director1.yearOfBirth < director2.yearOfBirth)
       director1
@@ -30,33 +33,40 @@ object Film {
     else
       film2
   }
+
+  def oldestDirectorAtTheTime(film1: Film, film2: Film): Director = {
+    if (film1.directorsAge > film2.directorsAge)
+      film1.director
+    else
+      film2.director
+  }
 }
 
 
 
 object FilmTest extends App {
-  val eastwood = new Director("Clint", "Eastwood", 1930)
-  val mcTiernan = new Director("John", "McTiernan", 1951)
-  val nolan = new Director("Christopher", "Nolan", 1970)
-  val someGuy = new Director("Just", "Some Guy", 1990)
+  val eastwood = Director("Clint", "Eastwood", 1930)
+  val mcTiernan = Director("John", "McTiernan", 1951)
+  val nolan = Director("Christopher", "Nolan", 1970)
+  val someGuy = Director("Just", "Some Guy", 1990)
 
-  val memento = new Film("Memento", 2000, 8.5, nolan)
-  val darkKnight = new Film("Dark Knight", 2008, 9.0, nolan)
-  val inception = new Film("Inception", 2010, 8.8, nolan)
+  val memento = Film("Memento", 2000, 8.5, nolan)
+  val darkKnight = Film("Dark Knight", 2008, 9.0, nolan)
+  val inception = Film("Inception", 2010, 8.8, nolan)
 
-  val highPlainsDrifter = new Film("High Plains Drifter", 1973, 7.7, eastwood)
-  val outlawJoseyWales = new Film("The Outlaw Josey Wales", 1976, 7.9, eastwood)
-  val unforgiven = new Film("Unforgiven", 1992, 8.3, eastwood)
-  val granTorino = new Film("Gran Torino", 2008, 8.2, eastwood)
-  val invictus = new Film("Invictus", 2009, 7.4, eastwood)
+  val highPlainsDrifter = Film("High Plains Drifter", 1973, 7.7, eastwood)
+  val outlawJoseyWales = Film("The Outlaw Josey Wales", 1976, 7.9, eastwood)
+  val unforgiven = Film("Unforgiven", 1992, 8.3, eastwood)
+  val granTorino = Film("Gran Torino", 2008, 8.2, eastwood)
+  val invictus = Film("Invictus", 2009, 7.4, eastwood)
 
-  val predator = new Film("Predator", 1987, 7.9, mcTiernan)
-  val dieHard = new Film("Die Hard", 1988, 8.3, mcTiernan)
-  val huntForRedOctober = new Film("The Hunt for Red October", 1990, 7.6, mcTiernan)
-  val thomasCrownAffair = new Film("The Thomas Crown Affair", 1999, 6.8, mcTiernan)
+  val predator = Film("Predator", 1987, 7.9, mcTiernan)
+  val dieHard = Film("Die Hard", 1988, 8.3, mcTiernan)
+  val huntForRedOctober = Film("The Hunt for Red October", 1990, 7.6, mcTiernan)
+  val thomasCrownAffair = Film("The Thomas Crown Affair", 1999, 6.8, mcTiernan)
 
-  eastwood.yearOfBirth // should be 1930
-  dieHard.director.name // should be "John McTiernan"
-  invictus.isDirectedBy(nolan) // should be false
+  println(eastwood.yearOfBirth) // should be 1930
+  println(dieHard.director.name) // should be "John McTiernan"
+  println(invictus.isDirectedBy(nolan)) // should be false
 
 }

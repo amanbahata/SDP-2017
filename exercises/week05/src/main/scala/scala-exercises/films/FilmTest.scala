@@ -1,11 +1,11 @@
 package films
 
-class Director(val firstName: String, val lastName: String, val yearOfBirth: Int){
+case class Director(firstName: String, lastName: String, yearOfBirth: Int){
 
   def name = s"$firstName $lastName"
 }
 
-class Film(val name: String, val yearOfRelease: Int, val imbdRating: Double, val director: Director){
+case class Film(name: String, yearOfRelease: Int, imbdRating: Double, director: Director){
 
   def directorsAge : Int = yearOfRelease - director.yearOfBirth
 

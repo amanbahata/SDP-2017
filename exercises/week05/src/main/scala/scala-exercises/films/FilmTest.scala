@@ -5,11 +5,30 @@ case class Director(firstName: String, lastName: String, yearOfBirth: Int){
   def name = s"$firstName $lastName"
 }
 
-case class Film(name: String,yearOfRelease: Int, imbdRating: Double, director: Director){
+case class Film(name: String, yearOfRelease: Int, imbdRating: Double, director: Director){
 
   def directorsAge = yearOfRelease - director.yearOfBirth
-  def idDirectedBy(director: Director) : Boolean = {
+  def idDirectedBy(director: Director) : Boolean
+  def copy(name: String): Film = Film(name, this.yearOfRelease, this.imbdRating, this.director)
+}
 
+object Director {
+  def apply(firstName: String, lastName: String, yearOfBirth: Int): Director = new Director(firstName, lastName, yearOfBirth)
+  def older(director1: Director, director2: Director): Director = {
+    if (director1.yearOfBirth < director2.yearOfBirth)
+      director1
+    else
+      director2
+  }
+}
+
+object Film {
+  def apply(name: String, yearOfRelease: Int, imbdRating: Double, director: Director): Film = new Film(name, yearOfRelease, imbdRating, director)
+  def highestRating(film1: Film, film2: Film): Film = {
+    if (film1.imbdRating > film2.imbdRating)
+      film1
+    else
+      film2
   }
 }
 

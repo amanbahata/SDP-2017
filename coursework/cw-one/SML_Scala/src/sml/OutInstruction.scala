@@ -10,7 +10,7 @@ case class OutInstruction(label: String, opcode: String, register: Int)
 
   override def execute(m: Machine) {
     value = m.regs(register)
-    println("Register "+register + " content is " + value)
+    println("Register "+register + " contains " + value)
   }
 
   override def toString(): String = {

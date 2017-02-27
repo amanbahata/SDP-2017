@@ -7,7 +7,7 @@ class MulInstruction(label: String, op: String, val result: Int, val op1: Int, v
     extends Instruction(label, op){
 
     override def toString(): String = {
-      super.toString + " " + op1 + " X " + op2 + " to " + result
+      super.toString + " " + op1 + " * " + op2 + " to " + result + "\n"
     }
 
     override def execute(m: Machine): Unit = {

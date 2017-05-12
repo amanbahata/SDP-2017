@@ -55,8 +55,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IconstByteCode.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IconstByteCode.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/bc/IconstByteCode.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="68" lean-forward="true" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IdecByteCode.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/bc/IdecByteCode.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
               <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
@@ -105,16 +115,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="p02-bad-stack.vm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/programs/p02-bad-stack.vm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProgramParser.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/instructor/scala/vendor/ProgramParser.scala">
           <provider selected="true" editor-type-id="text-editor">
@@ -139,6 +139,7 @@
         <option value="$PROJECT_DIR$/src/main/scala/factory/ImplProgramParser.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/bc/IaddByteCode.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/bc/IconstByteCode.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/bc/IdecByteCode.scala" />
       </list>
     </option>
   </component>
@@ -863,12 +864,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1494597183451</updated>
-      <workItem from="1494597188888" duration="9226000" />
+      <workItem from="1494597188888" duration="9368000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9226000" />
+    <option name="totallyTimeSpent" value="9368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="738" extended-state="6" />
@@ -1032,6 +1033,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/bc/IconstByteCode.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="68" lean-forward="true" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/bc/IdecByteCode.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />

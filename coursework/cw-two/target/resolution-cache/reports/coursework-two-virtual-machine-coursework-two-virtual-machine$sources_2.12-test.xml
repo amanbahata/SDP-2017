@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170512145338"/>
+		date="20170512214139"/>
 	<dependencies>
 		<module organisation="org.scalatest" name="scalatest_2.12">
 			<revision name="3.0.1" status="release" pubdate="20161110055252" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="6">
@@ -62,7 +62,7 @@
 					<artifact name="slf4j-simple" type="jar" ext="jar" status="no" details="" size="11070" time="0" location="/Users/aman1/.ivy2/cache/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.22.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.22/slf4j-simple-1.7.22.jar"/>
 					</artifact>
-					<artifact name="slf4j-simple" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="11854" time="2881" location="/Users/aman1/.ivy2/cache/org.slf4j/slf4j-simple/srcs/slf4j-simple-1.7.22-sources.jar">
+					<artifact name="slf4j-simple" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="11854" time="0" location="/Users/aman1/.ivy2/cache/org.slf4j/slf4j-simple/srcs/slf4j-simple-1.7.22-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.22/slf4j-simple-1.7.22-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -76,7 +76,7 @@
 					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="41077" time="0" location="/Users/aman1/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.22.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.22/slf4j-api-1.7.22.jar"/>
 					</artifact>
-					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="55650" time="129" location="/Users/aman1/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.22-sources.jar">
+					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="55650" time="0" location="/Users/aman1/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.22-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.22/slf4j-api-1.7.22-sources.jar"/>
 					</artifact>
 				</artifacts>

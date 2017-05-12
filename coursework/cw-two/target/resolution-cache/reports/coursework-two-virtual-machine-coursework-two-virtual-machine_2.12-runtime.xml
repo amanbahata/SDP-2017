@@ -7,25 +7,25 @@
 		revision="1.0"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170512133632"/>
+		date="20170512214138"/>
 	<dependencies>
 		<module organisation="org.slf4j" name="slf4j-simple">
-			<revision name="1.7.22" status="release" pubdate="20161213170532" resolver="public" artresolver="public" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="4">
-				<metadata-artifact status="successful" details="" size="1015" time="29" location="/Users/aman1/.ivy2/cache/org.slf4j/slf4j-simple/ivy-1.7.22.xml" searched="true" original-local-location="/Users/aman1/.ivy2/cache/org.slf4j/slf4j-simple/ivy-1.7.22.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.22/slf4j-simple-1.7.22.pom"/>
+			<revision name="1.7.22" status="release" pubdate="20161213170532" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
+				<metadata-artifact status="no" details="" size="5267" time="0" location="/Users/aman1/.ivy2/cache/org.slf4j/slf4j-simple/ivy-1.7.22.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.22/slf4j-simple-1.7.22.pom"/>
 				<caller organisation="coursework-two-virtual-machine" name="coursework-two-virtual-machine_2.12" conf="compile, runtime" rev="1.7.22" rev-constraint-default="1.7.22" rev-constraint-dynamic="1.7.22" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="slf4j-simple" type="jar" ext="jar" status="successful" details="" size="11070" time="34" location="/Users/aman1/.ivy2/cache/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.22.jar">
+					<artifact name="slf4j-simple" type="jar" ext="jar" status="no" details="" size="11070" time="0" location="/Users/aman1/.ivy2/cache/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.22.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.22/slf4j-simple-1.7.22.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.slf4j" name="slf4j-api">
-			<revision name="1.7.22" status="release" pubdate="20161213170525" resolver="public" artresolver="public" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
-				<metadata-artifact status="successful" details="" size="2775" time="26" location="/Users/aman1/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.22.xml" searched="true" original-local-location="/Users/aman1/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.22.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.22/slf4j-api-1.7.22.pom"/>
+			<revision name="1.7.22" status="release" pubdate="20161213170525" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<metadata-artifact status="no" details="" size="5293" time="0" location="/Users/aman1/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.22.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.22/slf4j-api-1.7.22.pom"/>
 				<caller organisation="org.slf4j" name="slf4j-simple" conf="default, compile, runtime, master" rev="1.7.22" rev-constraint-default="1.7.22" rev-constraint-dynamic="1.7.22" callerrev="1.7.22"/>
 				<artifacts>
-					<artifact name="slf4j-api" type="jar" ext="jar" status="successful" details="" size="41077" time="36" location="/Users/aman1/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.22.jar">
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="41077" time="0" location="/Users/aman1/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.22.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.22/slf4j-api-1.7.22.jar"/>
 					</artifact>
 				</artifacts>

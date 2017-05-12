@@ -85,11 +85,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IdupByteCode.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IdupByteCode.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/bc/IdupByteCode.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
               <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IncBytecode.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/bc/IncBytecode.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -100,16 +110,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="448">
               <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="p05.vm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/programs/p05.vm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -142,6 +142,7 @@
         <option value="$PROJECT_DIR$/src/main/scala/bc/IdecByteCode.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/bc/IdivByteCode.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/bc/IdupByteCode.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/bc/IncBytecode.scala" />
       </list>
     </option>
   </component>
@@ -866,12 +867,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1494597183451</updated>
-      <workItem from="1494597188888" duration="9731000" />
+      <workItem from="1494597188888" duration="9872000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9731000" />
+    <option name="totallyTimeSpent" value="9872000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="738" extended-state="6" />
@@ -1062,6 +1063,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/bc/IncBytecode.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
           <folding />
         </state>
       </provider>

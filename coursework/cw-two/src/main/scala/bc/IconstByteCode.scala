@@ -4,13 +4,13 @@ import vm.VirtualMachine
 /**
   * Created by aman1 on 12/05/2017.
   */
-class IaddByteCode extends ByteCode{
+class IconstByteCode(val numberValue: Int) extends ByteCode {
   /**
     * A unique byte value representing the bytecode. An implementation
     * will set this to the bytecode corresponding to the name of the
     * bytecode in [[ByteCodeValues]]
     */
-  override val code: Byte = bytecode.apply("iadd")
+  override val code: Byte = bytecode.apply("iconst")
 
   /**
     * Returns a new [[VirtualMachine]] after executing this bytecode operation.
@@ -19,8 +19,6 @@ class IaddByteCode extends ByteCode{
     * @return a new virtual machine
     */
   override def execute(vm: VirtualMachine): VirtualMachine = {
-    val value1 = vm.pop()._1
-    val value2 = vm.pop()._1
-    vm.push(value1 + value2)
+    vm.push(numberValue)
   }
 }

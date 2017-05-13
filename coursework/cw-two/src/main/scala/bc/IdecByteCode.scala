@@ -10,7 +10,7 @@ class IdecByteCode extends ByteCode{
     * will set this to the bytecode corresponding to the name of the
     * bytecode in [[ByteCodeValues]]
     */
-  override val code: Byte = bytecode.apply("idec")
+  override val code: Byte = bytecode("idec")
 
   /**
     * Returns a new [[VirtualMachine]] after executing this bytecode operation.
@@ -20,5 +20,6 @@ class IdecByteCode extends ByteCode{
     */
   override def execute(vm: VirtualMachine): VirtualMachine = {
     vm.push(vm.pop()._1 - 1)
+    vm
   }
 }

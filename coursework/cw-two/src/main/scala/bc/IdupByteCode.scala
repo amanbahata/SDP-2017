@@ -10,7 +10,7 @@ class IdupByteCode extends ByteCode{
     * will set this to the bytecode corresponding to the name of the
     * bytecode in [[ByteCodeValues]]
     */
-  override val code: Byte = bytecode.apply("idup")
+  override val code: Byte = bytecode("idup")
 
   /**
     * Returns a new [[VirtualMachine]] after executing this bytecode operation.
@@ -22,5 +22,6 @@ class IdupByteCode extends ByteCode{
     val value = vm.pop()._1
     vm.push(value)
     vm.push(value)
+    vm
   }
 }

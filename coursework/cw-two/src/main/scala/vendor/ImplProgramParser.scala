@@ -43,8 +43,8 @@ class ImplProgramParser extends ProgramParser {
 
       if (line.contains(" ")) {
         val lineSeparation = line.split(" ")
-        splitLine = lineSeparation(0).toLowerCase
-        number = number :+ splitLine(1).toInt
+        splitLine = lineSeparation(0)
+        number = number :+ lineSeparation(1).toInt
       }
 
       instructionsList = instructionsList :+ new Instruction(splitLine, number)

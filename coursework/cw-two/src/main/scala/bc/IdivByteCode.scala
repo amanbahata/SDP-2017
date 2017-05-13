@@ -10,7 +10,7 @@ class IdivByteCode extends ByteCode{
     * will set this to the bytecode corresponding to the name of the
     * bytecode in [[ByteCodeValues]]
     */
-  override val code: Byte = bytecode.apply("idiv")
+  override val code: Byte = bytecode("idiv")
 
   /**
     * Returns a new [[VirtualMachine]] after executing this bytecode operation.
@@ -22,5 +22,6 @@ class IdivByteCode extends ByteCode{
     val value1 = vm.pop()._1
     val value2 = vm.pop()._1
     vm.push(value1 / value2)
+    vm
   }
 }

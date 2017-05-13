@@ -28,9 +28,9 @@ class ImplVirtualMachineParser extends VirtualMachineParser with ByteCodeValues{
   }
 
   /**
-    *
-    * @param instArray
-    * @return
+    * This method converts the contents
+    * @param instArray an array containing the instructions parsed from the file
+    * @return a vector of converted bytes
     */
 
   def convertToByte(instArray: Vector[Instruction]): Vector[Byte] = {

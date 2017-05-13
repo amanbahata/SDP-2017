@@ -6,6 +6,8 @@ import bc._
   * Created by aman1 on 12/05/2017.
   */
 class ImplByteCodeFactory extends ByteCodeFactory with ByteCodeValues{
+
+
   /**
     * Returns a [[ByteCode]].
     *

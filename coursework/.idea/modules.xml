@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cw-one/SML/SML.iml" filepath="$PROJECT_DIR$/cw-one/SML/SML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cw-one/SML_Scala/SML_Scala.iml" filepath="$PROJECT_DIR$/cw-one/SML_Scala/SML_Scala.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cw-two/src/instructor/instructor.iml" filepath="$PROJECT_DIR$/cw-two/src/instructor/instructor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cw-two/src/main/main.iml" filepath="$PROJECT_DIR$/cw-two/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cw-two/src/test/test.iml" filepath="$PROJECT_DIR$/cw-two/src/test/test.iml" />
+    </modules>
+  </component>
+</project>

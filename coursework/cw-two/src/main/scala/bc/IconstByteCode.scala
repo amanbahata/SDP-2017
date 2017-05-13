@@ -20,5 +20,6 @@ class IconstByteCode(val numberValue: Int) extends ByteCode {
     */
   override def execute(vm: VirtualMachine): VirtualMachine = {
     vm.push(numberValue)
+    vm
   }
 }

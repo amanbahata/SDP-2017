@@ -1,11 +1,12 @@
 package vendor
 
-import scala.io.Source
+
 
 /**
   * Created by aman1 on 12/05/2017.
   */
 class ImplProgramParser extends ProgramParser {
+  override type InstructionList = Vector[Instruction]
   /**
     * Parses a file representation of a bytecode program
     * into an `InstructionList`.
@@ -14,11 +15,12 @@ class ImplProgramParser extends ProgramParser {
     * @return an instruction list
     */
   override def parse(file: String): InstructionList = {
+    import scala.io.Source
     val fileLines = Source.fromFile(file).getLines()
     var instructionsList = Vector[Instruction]()
-    for (line <- fileLines)
-      instructionsList = instructionsList ++: parseString(line)
-
+    for (line <- fileLines) {
+        instructionsList = instructionsList ++: parseString(line)
+      }
     instructionsList
   }
 
@@ -36,11 +38,11 @@ class ImplProgramParser extends ProgramParser {
 
     for (line <- lineContainer){
       var splitLine: String = line.toLowerCase
-      var number = Vector[Int]()
+      var number: Vector[Int] = Vector[Int]()
 
       if (line.contains(" ")) {
-        var lineSeparation = line.split(" ")
-        splitLine = lineSeparation(0)
+        val lineSeparation = line.split(" ")
+        splitLine = lineSeparation(0).toLowerCase
         number = number :+ splitLine(1).toInt
       }
 

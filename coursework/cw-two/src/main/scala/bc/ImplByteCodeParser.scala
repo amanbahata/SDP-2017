@@ -6,6 +6,8 @@ import factory.ImplByteCodeFactory
   * Created by aman1 on 12/05/2017.
   */
 class ImplByteCodeParser extends ByteCodeParser with ByteCodeValues{
+
+  val byteCfactory : ByteCodeFactory = new ImplByteCodeFactory
   /**
     * Parses a vector of `Byte` into a vector of `ByteCode`.
     *
@@ -16,11 +18,11 @@ class ImplByteCodeParser extends ByteCodeParser with ByteCodeValues{
     * @return a vector of `ByteCode` objects
     */
   override def parse(bc: Vector[Byte]): Vector[ByteCode] = {
-    val byteCfactory : ByteCodeFactory = new ImplByteCodeFactory
-    var listOfByteCode = Vector[ByteCode]()
+
+    var listOfByteCode: Vector[ByteCode] = Vector[ByteCode]()
 
     var counter = 0
-    while (counter <= bc.length-1){
+    while (counter < bc.length){
       if (bc(counter) == bytecode("iconst")){
         listOfByteCode = listOfByteCode :+ byteCfactory.make(bc(counter),bc(counter+1).toInt)
         counter += 2

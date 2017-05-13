@@ -1,1 +1,15 @@
 [0m[[0minfo[0m] [0m[32mPublicByteCodeParserSuite:[0m[0m
+[0m[[0minfo[0m] [0m[32m- [2] byte code parser should parse a single bytecode[0m[0m
+[0m[[0minfo[0m] [0m[31m- [5] byte code parser should parse a sequence of bytecode *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.util.NoSuchElementException: next on empty iterator[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.Iterator$$anon$2.next(Iterator.scala:38)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.Iterator$$anon$2.next(Iterator.scala:36)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.IndexedSeqLike$Elements.next(IndexedSeqLike.scala:60)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.IterableLike.head(IterableLike.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.IterableLike.head$(IterableLike.scala:105)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.WrappedArray.scala$collection$IndexedSeqOptimized$$super$head(WrappedArray.scala:34)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.IndexedSeqOptimized.head(IndexedSeqOptimized.scala:125)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.IndexedSeqOptimized.head$(IndexedSeqOptimized.scala:125)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.WrappedArray.head(WrappedArray.scala:34)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at factory.ImplByteCodeFactory.make(ImplByteCodeFactory.scala:36)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m

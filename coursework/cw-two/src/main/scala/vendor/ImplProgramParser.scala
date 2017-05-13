@@ -31,17 +31,21 @@ class ImplProgramParser extends ProgramParser {
     */
   override def parseString(string: String): InstructionList = {
     // Stores the contents of each line in the program
-    //    val lineContainer: Array[String] = string.split("\n")
+    val lineContainer: Array[String] = string.split("\n")
     var instructionsList = Vector[Instruction]()
-    var number = Vector[Int]()
 
-    var splitLine = string.split(" ")
-    var operand = splitLine(0)
-    if (splitLine.length > 1) {
-      val num = splitLine(1).toInt
-      number = number :+ num
-    }
-    instructionsList = instructionsList :+ new Instruction(operand, number)
+    for (line <- lineContainer){
+      var splitLine: String = line.toLowerCase
+      var number = Vector[Int]()
+
+      if (line.contains(" ")) {
+        var lineSeparation = line.split(" ")
+        splitLine = lineSeparation(0)
+        number = number :+ splitLine(1).toInt
+      }
+
+      instructionsList = instructionsList :+ new Instruction(splitLine, number)
+  }
     instructionsList
   }
 }

@@ -19,11 +19,14 @@ class ImplByteCodeParser extends ByteCodeParser with ByteCodeValues{
     val byteCfactory : ByteCodeFactory = new ImplByteCodeFactory
     var listOfByteCode = Vector[ByteCode]()
 
-    for (i <- bc.indices){
-      if (i == bytecode("iconst")){
-        listOfByteCode = listOfByteCode :+ byteCfactory.make(bc(i),bc(i+1).toInt)
+    var counter = 0
+    while (counter <= bc.length-1){
+      if (bc(counter) == bytecode("iconst")){
+        listOfByteCode = listOfByteCode :+ byteCfactory.make(bc(counter),bc(counter+1).toInt)
+        counter += 2
       } else {
-        listOfByteCode = listOfByteCode :+ byteCfactory.make(bc(i))
+        listOfByteCode = listOfByteCode :+ byteCfactory.make(bc(counter))
+        counter += 1
       }
     }
 

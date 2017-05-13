@@ -1,1 +1,3 @@
 [0m[[0minfo[0m] [0m[32mPublicByteCodeFactorySuite:[0m[0m
+[0m[[0minfo[0m] [0m[32m- [5] all bytecodes should be made by factory[0m[0m
+[0m[[0minfo[0m] [0m[32m- [3] an invalid bytecode should throw an exception[0m[0m

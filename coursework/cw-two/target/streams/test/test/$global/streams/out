@@ -1,17 +1,18 @@
-[0m[[0mdebug[0m] [0mRunning TaskDef(vm.PublicVirtualMachineParserSuite, org.scalatest.tools.Framework$$anon$1@5cb05d05, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(vm.PublicVirtualMachineSuite, org.scalatest.tools.Framework$$anon$1@5cb05d05, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(vendor.PublicVendorParserSuite, org.scalatest.tools.Framework$$anon$1@5cb05d05, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(bc.PublicByteCodeFactorySuite, org.scalatest.tools.Framework$$anon$1@5cb05d05, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(bc.PublicByteCodeParserSuite, org.scalatest.tools.Framework$$anon$1@5cb05d05, false, [SuiteSelector])[0m
-[0m[[0minfo[0m] [0m[36mRun completed in 322 milliseconds.[0m[0m
-[0m[[0minfo[0m] [0m[36mTotal number of tests run: 0[0m[0m
-[0m[[0minfo[0m] [0m[36mSuites: completed 0, aborted 5[0m[0m
-[0m[[0minfo[0m] [0m[36mTests: succeeded 0, failed 0, canceled 0, ignored 0, pending 0[0m[0m
-[0m[[0minfo[0m] [0m[31m*** 5 SUITES ABORTED ***[0m[0m
-[0m[[31merror[0m] [0mError during tests:[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(vm.PublicVirtualMachineParserSuite, org.scalatest.tools.Framework$$anon$1@315ccb2b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(vendor.PublicVendorParserSuite, org.scalatest.tools.Framework$$anon$1@315ccb2b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(vm.PublicVirtualMachineSuite, org.scalatest.tools.Framework$$anon$1@315ccb2b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(bc.PublicByteCodeParserSuite, org.scalatest.tools.Framework$$anon$1@315ccb2b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(bc.PublicByteCodeFactorySuite, org.scalatest.tools.Framework$$anon$1@315ccb2b, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 429 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 14[0m[0m
+[0m[[0minfo[0m] [0m[36mSuites: completed 5, aborted 0[0m[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 5, failed 9, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0minfo[0m] [0m[31m*** 9 TESTS FAILED ***[0m[0m
+[0m[[0mdebug[0m] [0mPassed tests:[0m
+[0m[[0mdebug[0m] [0m	bc.PublicByteCodeFactorySuite[0m
+[0m[[31merror[0m] [0mFailed tests:[0m
 [0m[[31merror[0m] [0m	bc.PublicByteCodeParserSuite[0m
 [0m[[31merror[0m] [0m	vm.PublicVirtualMachineSuite[0m
 [0m[[31merror[0m] [0m	vendor.PublicVendorParserSuite[0m
 [0m[[31merror[0m] [0m	vm.PublicVirtualMachineParserSuite[0m
-[0m[[31merror[0m] [0m	bc.PublicByteCodeFactorySuite[0m
 [0m[[31merror[0m] [0m(test:[31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m

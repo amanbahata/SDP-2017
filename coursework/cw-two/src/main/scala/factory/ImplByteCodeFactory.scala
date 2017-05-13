@@ -22,18 +22,18 @@ class ImplByteCodeFactory extends ByteCodeFactory with ByteCodeValues{
     * @return a new bytecode object
     */
   override def make(byte: Byte, args: Int*): ByteCode = byte match {
-    case byte if bytecode("iadd")  => new IaddByteCode
-    case byte if bytecode("isub")  => new IsubByteCode
-    case byte if bytecode("imul")  => new ImulByteCode
-    case byte if bytecode("idiv")  => new IdivByteCode
-    case byte if bytecode("irem")  => new IremByteCode
-    case byte if bytecode("ineg")  => new InegByteCode
-    case byte if bytecode("iinc")  => new IncBytecode
-    case byte if bytecode("idec")  => new IdecByteCode
-    case byte if bytecode("iswap")  => new ISwapByteCode
-    case byte if bytecode("idup")  => new IdupByteCode
-    case byte if bytecode("print")  => new IprintByteCode
-    case byte if bytecode("iconst")  => new IconstByteCode(args.head)
+    case iaddByte if bytecode("iadd") == byte  => new IaddByteCode
+    case isubByte if bytecode("isub")  == byte => new IsubByteCode
+    case imulByte if bytecode("imul")  == byte => new ImulByteCode
+    case idivByte if bytecode("idiv")  == byte => new IdivByteCode
+    case iremByte if bytecode("irem")  == byte => new IremByteCode
+    case inegByte if bytecode("ineg")  == byte => new InegByteCode
+    case iincByte if bytecode("iinc")  == byte => new IncBytecode
+    case idecByte if bytecode("idec")  == byte => new IdecByteCode
+    case iswapByte if bytecode("iswap") == byte => new ISwapByteCode
+    case idupByte if bytecode("idup") == byte => new IdupByteCode
+    case printByte if bytecode("print") == byte => new IprintByteCode
+    case iconstByte if bytecode("iconst") == byte  => new IconstByteCode(args.head)
     case _ => throw new InvalidBytecodeException("Invalid Value")
   }
 }

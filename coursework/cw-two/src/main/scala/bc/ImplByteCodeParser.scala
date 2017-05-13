@@ -20,7 +20,7 @@ class ImplByteCodeParser extends ByteCodeParser with ByteCodeValues{
     var listOfByteCode = Vector[ByteCode]()
 
     for (i <- bc.indices){
-      if (bc(i) = bytecode("iconst")){
+      if (i == bytecode("iconst")){
         listOfByteCode = listOfByteCode :+ byteCfactory.make(bc(i),bc(i+1).toInt)
       } else {
         listOfByteCode = listOfByteCode :+ byteCfactory.make(bc(i))

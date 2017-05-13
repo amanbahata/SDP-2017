@@ -5,6 +5,7 @@ import bc.ByteCode
   * Created by aman1 on 13/05/2017.
   */
 class ImplVirtualMachine extends VirtualMachine{
+  var stackL : Vector[Int] = Vector[Int]()
   /**
     * Executes a vector of bytecodes.
     *
@@ -15,7 +16,12 @@ class ImplVirtualMachine extends VirtualMachine{
     * @param bc a vector of bytecodes
     * @return a new virtual machine
     */
-  override def execute(bc: Vector[ByteCode]): VirtualMachine = ???
+  override def execute(bc: Vector[ByteCode]): VirtualMachine = {
+    for (b <- bc){
+      this.executeOne(bc)
+    }
+      new ImplVirtualMachine
+  }
 
   /**
     * Executes the next bytecode in the vector of bytecodes.
@@ -29,7 +35,10 @@ class ImplVirtualMachine extends VirtualMachine{
     * @param bc the vector of bytecodes
     * @return a tuple of a new vector of bytecodes and virtual machine
     */
-  override def executeOne(bc: Vector[ByteCode]): (Vector[ByteCode], VirtualMachine) = ???
+  override def executeOne(bc: Vector[ByteCode]): (Vector[ByteCode], VirtualMachine) = {
+    bc.head.execute(this)
+    (bc.tail, this)
+  }
 
   /**
     * Pushes an integer value onto the virtual machine stack.
@@ -37,7 +46,10 @@ class ImplVirtualMachine extends VirtualMachine{
     * @param value the integer to push
     * @return a new virtual machine with the integer `value` pushed
     */
-  override def push(value: Int): VirtualMachine = ???
+  override def push(value: Int): VirtualMachine = {
+    stackL = value +: stackL
+    this
+  }
 
   /**
     * Pops an integer value off of the virtual machine stack.
@@ -45,7 +57,14 @@ class ImplVirtualMachine extends VirtualMachine{
     * @return (i, vm), where i is the integer popped and vm is the
     *         new virtual machine
     */
-  override def pop(): (Int, VirtualMachine) = ???
+  override def pop(): (Int, VirtualMachine) = {
+    if (stackL.isEmpty){
+      throw new MachineUnderflowException("Stack is Empty")
+    } else {
+      stackL = stackL.tail
+      (stackL.head,this)
+    }
+  }
 
   /**
     * Returns the state of the virtual machine stack.
@@ -54,5 +73,5 @@ class ImplVirtualMachine extends VirtualMachine{
     *
     * @return the state of the stack
     */
-  override def state: Vector[Int] = ???
+  override def state: Vector[Int] = stackL
 }

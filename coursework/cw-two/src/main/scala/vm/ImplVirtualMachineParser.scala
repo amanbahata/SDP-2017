@@ -28,7 +28,7 @@ class ImplVirtualMachineParser extends VirtualMachineParser with ByteCodeValues{
   }
 
   /**
-    * This method converts the contents
+    * This method converts the contents of Vector[Instruction] to the equivalent byte
     * @param instArray an array containing the instructions parsed from the file
     * @return a vector of converted bytes
     */

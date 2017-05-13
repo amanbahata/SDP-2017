@@ -32,15 +32,13 @@ class ImplProgramParser extends ProgramParser {
     * @return an instruction list
     */
   override def parseString(string: String): InstructionList = {
-    // Stores the contents of each line in the program
-
     val lineContainer: Array[String] = string.split("\n")
     var instructionsList = Vector[Instruction]()
-
+    //Iterate over each line contained in a program and prepare container for the numbers.
     for (line <- lineContainer){
       var splitLine: String = line.toLowerCase
       var number: Vector[Int] = Vector[Int]()
-
+      //check a single line is composed of iconst NUM and split it.
       if (line.contains(" ")) {
         val lineSeparation = line.split(" ")
         splitLine = lineSeparation(0)

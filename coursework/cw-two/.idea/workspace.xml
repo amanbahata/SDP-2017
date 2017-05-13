@@ -88,8 +88,8 @@
       <file leaf-file-name="ImplVirtualMachineParser.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/vm/ImplVirtualMachineParser.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="31" column="80" lean-forward="false" selection-start-line="31" selection-start-column="80" selection-end-line="31" selection-end-column="80" />
+            <state relative-caret-position="343">
+              <caret line="35" column="19" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="19" />
               <folding>
                 <element signature="e#12#94#0" expanded="true" />
               </folding>
@@ -1025,7 +1025,7 @@
       <workItem from="1494597188888" duration="16859000" />
       <workItem from="1494621664616" duration="1449000" />
       <workItem from="1494674613923" duration="23079000" />
-      <workItem from="1494703152396" duration="3234000" />
+      <workItem from="1494703152396" duration="3264000" />
     </task>
     <servers />
   </component>
@@ -1062,7 +1062,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44621000" />
+    <option name="totallyTimeSpent" value="44651000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1549,8 +1549,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/vm/ImplVirtualMachineParser.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="31" column="80" lean-forward="false" selection-start-line="31" selection-start-column="80" selection-end-line="31" selection-end-column="80" />
+        <state relative-caret-position="343">
+          <caret line="35" column="19" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="19" />
           <folding>
             <element signature="e#12#94#0" expanded="true" />
           </folding>

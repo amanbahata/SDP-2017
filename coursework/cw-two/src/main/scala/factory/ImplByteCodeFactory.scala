@@ -3,7 +3,7 @@ package factory
 import bc._
 
 /**
-  * Created by aman1 on 12/05/2017.
+  * Created by Aman Enghida and Biruk Gebreselassie on 12/05/2017.
   */
 class ImplByteCodeFactory extends ByteCodeFactory with ByteCodeValues{
 

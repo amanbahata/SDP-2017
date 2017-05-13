@@ -3,7 +3,7 @@ package bc
 import factory.ImplByteCodeFactory
 
 /**
-  * Created by aman1 on 12/05/2017.
+  * Created by Aman Enghida and Biruk Gebreselassie on 12/05/2017.
   */
 class ImplByteCodeParser extends ByteCodeParser with ByteCodeValues{
 

@@ -4,7 +4,7 @@ import bc.{ByteCode, ByteCodeValues, ImplByteCodeParser, InvalidBytecodeExceptio
 import vendor.{ImplProgramParser, Instruction}
 
 /**
-  * Created by aman1 on 13/05/2017.
+  * Created by Aman Enghida and Biruk Gebreselassie on 13/05/2017.
   */
 class ImplVirtualMachineParser extends VirtualMachineParser with ByteCodeValues{
 

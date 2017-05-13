@@ -2,7 +2,7 @@ package bc
 import vm.VirtualMachine
 
 /**
-  * Created by aman1 on 12/05/2017.
+  * Created by Aman Enghida and Biruk Gebreselassie on 12/05/2017.
   */
 class IprintByteCode extends ByteCode {
   /**

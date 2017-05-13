@@ -2,7 +2,7 @@ package vm
 import bc.ByteCode
 
 /**
-  * Created by aman1 on 13/05/2017.
+  * Created by Aman Enghida and Biruk Gebreselassie on 13/05/2017.
   */
 class ImplVirtualMachine extends VirtualMachine {
   var stackL : Vector[Int] = Vector[Int]()

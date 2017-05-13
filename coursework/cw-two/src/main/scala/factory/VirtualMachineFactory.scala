@@ -1,7 +1,7 @@
 package factory
 
 import bc.{ByteCodeFactory, ByteCodeParser, ImplByteCodeParser}
-import vendor.ProgramParser
+import vendor.{ImplProgramParser, ProgramParser}
 import vm.{ImplVirtualMachine, ImplVirtualMachineParser, VirtualMachine, VirtualMachineParser}
 
 /**

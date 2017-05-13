@@ -1,6 +1,4 @@
-package factory
-
-import vendor.{Instruction, ProgramParser}
+package vendor
 
 import scala.io.Source
 

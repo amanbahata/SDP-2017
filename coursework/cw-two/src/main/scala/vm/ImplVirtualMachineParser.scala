@@ -1,8 +1,7 @@
 package vm
 
 import bc.{ByteCode, ByteCodeValues, ImplByteCodeParser, InvalidBytecodeException}
-import factory.ImplProgramParser
-import vendor.Instruction
+import vendor.{ImplProgramParser, Instruction}
 
 /**
   * Created by aman1 on 13/05/2017.

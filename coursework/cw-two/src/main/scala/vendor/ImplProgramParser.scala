@@ -33,6 +33,7 @@ class ImplProgramParser extends ProgramParser {
     */
   override def parseString(string: String): InstructionList = {
     // Stores the contents of each line in the program
+
     val lineContainer: Array[String] = string.split("\n")
     var instructionsList = Vector[Instruction]()
 

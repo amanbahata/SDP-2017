@@ -10,7 +10,7 @@ class IaddByteCode extends ByteCode{
     * will set this to the bytecode corresponding to the name of the
     * bytecode in [[ByteCodeValues]]
     */
-  override val code: Byte = bytecode.apply("iadd")
+  override val code: Byte = bytecode("iadd")
 
   /**
     * Returns a new [[VirtualMachine]] after executing this bytecode operation.

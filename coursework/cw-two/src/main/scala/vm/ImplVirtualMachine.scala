@@ -4,7 +4,7 @@ import bc.ByteCode
 /**
   * Created by aman1 on 13/05/2017.
   */
-class ImplVirtualMachine extends VirtualMachine{
+class ImplVirtualMachine extends VirtualMachine {
   var stackL : Vector[Int] = Vector[Int]()
   /**
     * Executes a vector of bytecodes.

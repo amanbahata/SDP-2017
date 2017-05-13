@@ -23,8 +23,8 @@ class ImplByteCodeParser extends ByteCodeParser with ByteCodeValues{
 
     var counter = 0
     while (counter < bc.length){
-      if (bc(counter) == bytecode("iconst")){
-        listOfByteCode = listOfByteCode :+ byteCfactory.make(bc(counter),bc(counter+1).toInt)
+      if (bytecode("iconst") == bc(counter)){
+        listOfByteCode = listOfByteCode :+ byteCfactory.make(bc(counter), bc(counter + 1).toInt)
         counter += 2
       } else {
         listOfByteCode = listOfByteCode :+ byteCfactory.make(bc(counter))

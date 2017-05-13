@@ -10,7 +10,7 @@ class IconstByteCode(val numberValue: Int) extends ByteCode {
     * will set this to the bytecode corresponding to the name of the
     * bytecode in [[ByteCodeValues]]
     */
-  override val code: Byte = bytecode.apply("iconst")
+  override val code: Byte = bytecode("iconst")
 
   /**
     * Returns a new [[VirtualMachine]] after executing this bytecode operation.
@@ -20,6 +20,5 @@ class IconstByteCode(val numberValue: Int) extends ByteCode {
     */
   override def execute(vm: VirtualMachine): VirtualMachine = {
     vm.push(numberValue)
-    vm
   }
 }

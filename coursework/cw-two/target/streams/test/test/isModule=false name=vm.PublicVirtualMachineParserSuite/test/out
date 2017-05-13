@@ -1,28 +1,4 @@
 [0m[[0minfo[0m] [0m[32mPublicVirtualMachineParserSuite:[0m[0m
-[0m[[0minfo[0m] [0m[31m- [8] vm parser should parse programs/p01.vm a file into bytecode *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  java.util.NoSuchElementException: next on empty iterator[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.Iterator$$anon$2.next(Iterator.scala:38)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.Iterator$$anon$2.next(Iterator.scala:36)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.IndexedSeqLike$Elements.next(IndexedSeqLike.scala:60)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.IterableLike.head(IterableLike.scala:106)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.IterableLike.head$(IterableLike.scala:105)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.WrappedArray.scala$collection$IndexedSeqOptimized$$super$head(WrappedArray.scala:34)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.IndexedSeqOptimized.head(IndexedSeqOptimized.scala:125)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.IndexedSeqOptimized.head$(IndexedSeqOptimized.scala:125)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.WrappedArray.head(WrappedArray.scala:34)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at factory.ImplByteCodeFactory.make(ImplByteCodeFactory.scala:36)[0m[0m
-[0m[[0minfo[0m] [0m[31m  ...[0m[0m
-[0m[[0minfo[0m] [0m[31m- [8] vm parser should parse programs/p03.vm a file into bytecode *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  java.util.NoSuchElementException: next on empty iterator[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.Iterator$$anon$2.next(Iterator.scala:38)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.Iterator$$anon$2.next(Iterator.scala:36)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.IndexedSeqLike$Elements.next(IndexedSeqLike.scala:60)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.IterableLike.head(IterableLike.scala:106)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.IterableLike.head$(IterableLike.scala:105)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.WrappedArray.scala$collection$IndexedSeqOptimized$$super$head(WrappedArray.scala:34)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.IndexedSeqOptimized.head(IndexedSeqOptimized.scala:125)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.IndexedSeqOptimized.head$(IndexedSeqOptimized.scala:125)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.WrappedArray.head(WrappedArray.scala:34)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at factory.ImplByteCodeFactory.make(ImplByteCodeFactory.scala:36)[0m[0m
-[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32m- [8] vm parser should parse programs/p01.vm a file into bytecode[0m[0m
+[0m[[0minfo[0m] [0m[32m- [8] vm parser should parse programs/p03.vm a file into bytecode[0m[0m
 [0m[[0minfo[0m] [0m[32m- [4] vm parser should detect a program with invalid bytecode[0m[0m

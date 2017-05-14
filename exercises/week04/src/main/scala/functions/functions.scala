@@ -130,7 +130,7 @@ object Funcs {
     * @return the filtered list.
     */
   def filter[A](ls: List[A])(f: A => Boolean): List[A] = ls match {
-    case Nil => Nil
+    case Nil => throw new IllegalArgumentException
     case h::t if f(h) => h :: filter(t)(f)
     case h::t if !f(h) => filter(t)(f)
   }
@@ -144,7 +144,10 @@ object Funcs {
     * @return a List[B] containing the flattened results of applying f to all
     *         elements of ls.
     */
-  def flatMap[A, B](ls: List[A])(f: A => List[B]): List[B] = ???
+  def flatMap[A, B](ls: List[A])(f: A => List[B]): List[B] = ls match {
+    case Nil => Nil
+    case h::t => f(h) ::: flatMap(t)(f)
+  }
 
   // COMBINING FUNCTIONS
 

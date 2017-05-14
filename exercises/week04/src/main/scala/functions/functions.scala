@@ -100,7 +100,7 @@ object Funcs {
 
   def reverse[A](ls: List[A]): List[A] =  ls.reverse
 
-  def flatten[A](ls: List[List[A]]): List[A] = ???
+  def flatten[A](ls: List[List[A]]): List[A] = ls.flatten
 
 
   // MAP AND FILTER
@@ -114,7 +114,10 @@ object Funcs {
     * @param f  : A => B the function to be applied to each element of the input.
     * @return the resulting list from applying f to each element of ls.
     */
-  def map[A, B](ls: List[A])(f: A => B): List[B] = ???
+  def map[A, B](ls: List[A])(f: A => B): List[B] = {
+      case Nil => throw new IllegalArgumentException
+      case _ => 
+  }
 
   /**
     * filter removes all elements from a list for which a given predicate

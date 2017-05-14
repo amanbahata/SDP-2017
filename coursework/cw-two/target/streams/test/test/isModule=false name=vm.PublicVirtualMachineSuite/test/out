@@ -4,5 +4,18 @@
 [0m[[0minfo[0m] [0m[32m- [2] iadd should work correctly[0m[0m
 [0m[[0minfo[0m] [0m[32m- [2] isub should work correctly[0m[0m
 [0m[[0minfo[0m] [0m[32m- [2] iswap should work correctly[0m[0m
-[0m[[0minfo[0m] [0m[31m- [2] imul should work correctly *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  2 did not equal 1 (PublicVirtualMachineSuite.scala:56)[0m[0m
+[0m[[0minfo[0m] [0m[32m- [2] imul should work correctly[0m[0m
+[0m[[0minfo[0m] [0m[32m- [2] idiv should work correctly[0m[0m
+[0m[[0minfo[0m] [0m[31m- [2] inec should work correctly *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  bc.InvalidBytecodeException: invalid[0m[0m
+[0m[[0minfo[0m] [0m[31m  at vm.ImplVirtualMachineParser.$anonfun$convertToByte$1(ImplVirtualMachineParser.scala:39)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at vm.ImplVirtualMachineParser.$anonfun$convertToByte$1$adapted(ImplVirtualMachineParser.scala:37)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.Iterator.foreach(Iterator.scala:929)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.Iterator.foreach$(Iterator.scala:929)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.AbstractIterator.foreach(Iterator.scala:1406)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.IterableLike.foreach(IterableLike.scala:71)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.IterableLike.foreach$(IterableLike.scala:70)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.AbstractIterable.foreach(Iterable.scala:54)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at vm.ImplVirtualMachineParser.convertToByte(ImplVirtualMachineParser.scala:37)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at vm.ImplVirtualMachineParser.parseString(ImplVirtualMachineParser.scala:62)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m

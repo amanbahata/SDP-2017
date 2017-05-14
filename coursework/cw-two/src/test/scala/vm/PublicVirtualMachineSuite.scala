@@ -59,4 +59,15 @@ class PublicVirtualMachineSuite extends FunSuite {
     next = next._2.executeOne(next._1)
     assert(next._2.state.head == 4)
   }
+
+  test("[2] idiv should work correctly") {
+    val bc  = vmp.parseString("iconst 2\niconst 2\nidiv")
+    var next = vm.executeOne(bc)
+    assert(next._2.state.head == 2)
+    next = next._2.executeOne(next._1)
+    assert(next._2.state.head == 2)
+    next = next._2.executeOne(next._1)
+    assert(next._2.state.head == 1)
+  }
+
 }

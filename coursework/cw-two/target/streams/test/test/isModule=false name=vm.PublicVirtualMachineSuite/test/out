@@ -4,3 +4,5 @@
 [0m[[0minfo[0m] [0m[32m- [2] iadd should work correctly[0m[0m
 [0m[[0minfo[0m] [0m[32m- [2] isub should work correctly[0m[0m
 [0m[[0minfo[0m] [0m[32m- [2] iswap should work correctly[0m[0m
+[0m[[0minfo[0m] [0m[31m- [2] imul should work correctly *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  2 did not equal 1 (PublicVirtualMachineSuite.scala:56)[0m[0m

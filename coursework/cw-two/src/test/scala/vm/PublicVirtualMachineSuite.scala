@@ -49,4 +49,14 @@ class PublicVirtualMachineSuite extends FunSuite {
     assert(next._2.state(0) == 1)
     assert(next._2.state(1) == 2)
   }
+
+  test("[2] imul should work correctly") {
+    val bc  = vmp.parseString("iconst 2\niconst 2\nimul")
+    var next = vm.executeOne(bc)
+    assert(next._2.state.head == 2)
+    next = next._2.executeOne(next._1)
+    assert(next._2.state.head == 2)
+    next = next._2.executeOne(next._1)
+    assert(next._2.state.head == 4)
+  }
 }

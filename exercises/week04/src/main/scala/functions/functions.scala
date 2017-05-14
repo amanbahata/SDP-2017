@@ -100,7 +100,10 @@ object Funcs {
 
   def reverse[A](ls: List[A]): List[A] =  ls.reverse
 
-  def flatten[A](ls: List[List[A]]): List[A] = ls.flatten
+  def flatten[A](ls: List[List[A]]): List[A] = ls match {
+    case List() => Nil
+    case head :: tail => head ::: flatten(tail)
+  }
 
 
   // MAP AND FILTER
@@ -115,8 +118,8 @@ object Funcs {
     * @return the resulting list from applying f to each element of ls.
     */
   def map[A, B](ls: List[A])(f: A => B): List[B] = ls match {
-      case Nil => Nil
-      case h::t => f(h) :: map(t)(f)
+      case List() => Nil
+      case head :: tail => f(head) :: map(tail)(f)
     }
 
 
@@ -130,9 +133,9 @@ object Funcs {
     * @return the filtered list.
     */
   def filter[A](ls: List[A])(f: A => Boolean): List[A] = ls match {
-    case Nil => throw new IllegalArgumentException
-    case h::t if f(h) => h :: filter(t)(f)
-    case h::t if !f(h) => filter(t)(f)
+    case List() => Nil
+    case head :: tail if f(head) => head :: filter(tail)(f)
+    case head ::tail if !f(head) => filter(tail)(f)
   }
 
   /**
@@ -161,7 +164,10 @@ object Funcs {
     *           length is greater than 0.
     * @return the average value of the largest values in the pairs.
     */
-  def maxAverage(ls: List[(Double, Double)]): Double = ???
+  def maxAverage(ls: List[(Double, Double)]): Double = {
+    val list2: List[Double] = ls map { el => if (el._1 > el._2) el._1 else el._2}
+    foldLeft(list2, 0.0)(_ + _) / ls.size
+  }
 
   /**
     * variance takes a List[Double] and calculates the squared distance
@@ -175,5 +181,9 @@ object Funcs {
     * @param ls     : List[Double] a list of values, whose length is greater than 0.
     * @param return the variance of the input.
     */
-  def variance(ls: List[Double]): Double = ???
+  def variance(ls: List[Double]): Double = {
+    val mean = foldLeft(ls, 0.0)( _ + _ )/ls.size
+    val sqDist = ls map (x => (x-mean) * x)
+     foldLeft (sqDist, 0.0) ( _ + _ )/ls.size
+  }
 }

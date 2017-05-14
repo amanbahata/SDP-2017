@@ -23,6 +23,5 @@ class ISwapByteCode extends ByteCode{
     val value2 = vm.pop()._1
     vm.push(value1)
     vm.push(value2)
-    vm
   }
 }

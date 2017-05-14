@@ -22,6 +22,5 @@ class IaddByteCode extends ByteCode{
     val value1 =vm.pop()._1
     val value2 =vm.pop()._1
     vm.push(value1 + value2)
-    vm
   }
 }

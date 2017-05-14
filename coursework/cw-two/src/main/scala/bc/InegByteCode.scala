@@ -20,6 +20,5 @@ class InegByteCode extends ByteCode {
     */
   override def execute(vm: VirtualMachine): VirtualMachine = {
     vm.push(-vm.pop()._1)
-    vm
   }
 }

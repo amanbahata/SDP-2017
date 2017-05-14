@@ -21,6 +21,5 @@ class IprintByteCode extends ByteCode {
   override def execute(vm: VirtualMachine): VirtualMachine = {
     println(vm.pop()._1)
     vm
-
   }
 }

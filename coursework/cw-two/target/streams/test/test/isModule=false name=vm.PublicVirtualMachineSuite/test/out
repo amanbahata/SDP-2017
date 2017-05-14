@@ -1,10 +1,6 @@
 [0m[[0minfo[0m] [0m[32mPublicVirtualMachineSuite:[0m[0m
 [0m[[0minfo[0m] [0m[32m- [10] a virtual machine should execute a program[0m[0m
-[0m[[0minfo[0m] [0m[31m- [2] iconst should work correctly *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  99 did not equal 1 (PublicVirtualMachineSuite.scala:19)[0m[0m
-[0m[[0minfo[0m] [0m[31m- [2] iadd should work correctly *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  99 did not equal 1 (PublicVirtualMachineSuite.scala:25)[0m[0m
-[0m[[0minfo[0m] [0m[31m- [2] isub should work correctly *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  99 did not equal 1 (PublicVirtualMachineSuite.scala:35)[0m[0m
-[0m[[0minfo[0m] [0m[31m- [2] iswap should work correctly *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  99 did not equal 1 (PublicVirtualMachineSuite.scala:45)[0m[0m
+[0m[[0minfo[0m] [0m[32m- [2] iconst should work correctly[0m[0m
+[0m[[0minfo[0m] [0m[32m- [2] iadd should work correctly[0m[0m
+[0m[[0minfo[0m] [0m[32m- [2] isub should work correctly[0m[0m
+[0m[[0minfo[0m] [0m[32m- [2] iswap should work correctly[0m[0m

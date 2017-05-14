@@ -24,18 +24,18 @@ class ImplByteCodeFactory extends ByteCodeFactory with ByteCodeValues{
     * @return a new bytecode object
     */
   override def make(byte: Byte, args: Int*): ByteCode = byte match {
-    case byte if bytecode("iadd") == byte  => new IaddByteCode
-    case byte if bytecode("iconst") == byte  => new IconstByteCode(args.head)
-    case byte if bytecode("isub")  == byte => new IsubByteCode
-    case byte if bytecode("imul")  == byte => new ImulByteCode
-    case byte if bytecode("idiv")  == byte => new IdivByteCode
-    case byte if bytecode("irem")  == byte => new IremByteCode
-    case byte if bytecode("ineg")  == byte => new InegByteCode
-    case byte if bytecode("iinc")  == byte => new IncBytecode
-    case byte if bytecode("idec")  == byte => new IdecByteCode
-    case byte if bytecode("iswap") == byte => new ISwapByteCode
-    case byte if bytecode("idup") == byte => new IdupByteCode
-    case byte if bytecode("print") == byte => new IprintByteCode
-    case _ => throw new InvalidBytecodeException("Invalid Value")
+    case iadd if bytecode("iadd") == byte => new IaddByteCode
+    case iconst if bytecode("iconst") == byte  => new IconstByteCode(args.head)
+    case isub if bytecode("isub")  == byte => new IsubByteCode
+    case imul if bytecode("imul")  == byte => new ImulByteCode
+    case idiv if bytecode("idiv")  == byte => new IdivByteCode
+    case irem if bytecode("irem")  == byte => new IremByteCode
+    case ineg if bytecode("ineg")  == byte => new InegByteCode
+    case iinc if bytecode("iinc")  == byte => new IncBytecode
+    case idec if bytecode("idec")  == byte => new IdecByteCode
+    case iswap if bytecode("iswap") == byte => new ISwapByteCode
+    case idup if bytecode("idup") == byte => new IdupByteCode
+    case print if bytecode("print") == byte => new IprintByteCode
+    case _ => throw new InvalidBytecodeException("Invalid Value, please provide a valid format.")
   }
 }

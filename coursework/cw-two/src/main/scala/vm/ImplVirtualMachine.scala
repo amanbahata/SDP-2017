@@ -58,7 +58,7 @@ class ImplVirtualMachine extends VirtualMachine {
     *         new virtual machine
     */
   override def pop(): (Int, VirtualMachine) = {
-    if (stackL.size == 0){
+    if (stackL.isEmpty){
       throw new MachineUnderflowException("Stack is Empty")
     } else {
       val headOfStack = stackL.head

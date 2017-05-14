@@ -23,8 +23,7 @@ class ImplVirtualMachineParser extends VirtualMachineParser with ByteCodeValues{
     */
   override def parse(file: String): Vector[ByteCode] = {
     val result = programParser.parse(file)
-    val convertedByte = convertToByte(result)
-    byteParser.parse(convertedByte)
+    byteParser.parse(convertToByte(result))
   }
 
   /**
@@ -60,7 +59,6 @@ class ImplVirtualMachineParser extends VirtualMachineParser with ByteCodeValues{
     */
   override def parseString(str: String): Vector[ByteCode] = {
     val instArray = programParser.parseString(str)
-    val bytes = convertToByte(instArray)
-    byteParser.parse(bytes)
+    byteParser.parse(convertToByte(instArray))
   }
 }

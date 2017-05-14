@@ -22,6 +22,5 @@ class IdupByteCode extends ByteCode{
     val value = vm.pop()._1
     vm.push(value)
     vm.push(value)
-    vm
   }
 }
